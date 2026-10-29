@@ -1,10 +1,13 @@
 {
-  "Metadata": {
-    "title": "Zero Grau | Cerveja Pilsen Conti",
-    "description": "A Zero Grau é uma cerveja pilsen leve, refrescante e saborosa, com triplo filtrado, que gela muito mais rápido."
-  },
-  "Home": {
-    "title": "Zero Grau",
-    "subtitle": "Te convida a se refrescar"
-  }
+    "Metadata": {
+        "title": "Zero Grau | Cerveja Pilsen Conti",
+        "description": "A Zero Grau é uma cerveja pilsen leve, refrescante e saborosa, com triplo filtrado, que gela muito mais rápido."
+    },
+    "Home": {
+        "title": "Zero Grau",
+        "subtitle": "Te convida a se refrescar"
+    },
+    "Preloader": {
+        "loading": "Carregando"
+    }
 }

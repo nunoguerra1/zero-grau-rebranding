@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* Brand palette, sampled from the current site and the MIV product line */
-@theme static {
+@theme {
   --color-ice-50: #effaff;
   --color-ice-100: #d6f3fd;
   --color-ice-200: #a9e6fa;
@@ -20,6 +20,10 @@
   --color-sun-400: #ffc800;
   --color-sun-500: #f0b400;
 
+  /* Fonts */
+  --font-display: var(--font-anton), Impact, "Arial Narrow", sans-serif;
+  --font-sans: var(--font-montserrat), system-ui, sans-serif;
+
   /* Fluid type scale: generous sizes for readability */
   --text-display: clamp(3.5rem, 2rem + 8vw, 10rem);
   --text-display--line-height: 0.9;
@@ -27,11 +31,6 @@
   --text-headline--line-height: 1;
   --text-title: clamp(1.75rem, 1.3rem + 1.8vw, 2.75rem);
   --text-title--line-height: 1.1;
-}
-
-@theme inline {
-  --font-display: var(--font-anton), Impact, "Arial Narrow", sans-serif;
-  --font-sans: var(--font-montserrat), system-ui, sans-serif;
 }
 
 @layer base {
@@ -66,12 +65,10 @@
   background-image:
     radial-gradient(60% 50% at 20% 10%, rgb(24 197 232 / 0.28), transparent 70%),
     radial-gradient(50% 60% at 85% 80%, rgb(30 154 224 / 0.22), transparent 70%),
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       var(--color-navy-950),
       var(--color-navy-900) 55%,
-      var(--color-navy-800)
-    );
+      var(--color-navy-800));
 }
 
 @utility bg-ice-light {
@@ -83,6 +80,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
