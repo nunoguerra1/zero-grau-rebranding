@@ -245,5 +245,11 @@
       "hint": "Se abrirá WhatsApp con tu mensaje listo para enviar.",
       "template": "Hola, soy {name}. {message} #contizerograu"
     }
+  },
+  "Closing": {
+    "line1": "Zero Grau",
+    "line2": "te invita a refrescarte",
+    "buy": "Dónde comprar",
+    "talk": "Hablá con nosotros"
   }
 }
