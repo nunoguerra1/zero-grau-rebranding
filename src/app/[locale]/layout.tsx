@@ -3,7 +3,21 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { Anton, Montserrat } from "next/font/google";
+import { GrainOverlay } from "@/components/effects/GrainOverlay";
 import "../globals.css";
+
+const display = Anton({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-anton",
+  display: "swap",
+});
+const sans = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
 
 type Props = {
   children: React.ReactNode;
@@ -29,9 +43,13 @@ export default async function LocaleLayout({ children, params }: Props) {
   setRequestLocale(locale);
 
   return (
-    <html lang={locale === "pt" ? "pt-BR" : "es"}>
+    <html
+      lang={locale === "pt" ? "pt-BR" : "es"}
+      className={`${display.variable} ${sans.variable}`}
+    >
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <GrainOverlay />
       </body>
     </html>
   );
