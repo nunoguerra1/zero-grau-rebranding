@@ -111,6 +111,7 @@
     "category": "Pilsen",
     "abv": "4,4% alc.",
     "returnable": "Retornável",
+    "viewAll": "Ver toda a linha",
     "formats": {
       "can": "Lata",
       "bottle": "Garrafa"
@@ -136,5 +137,12 @@
         "description": "A garrafa de 600 ml, ideal para dividir na mesa. Retornável: devolva e economize."
       }
     }
+  },
+  "Line": {
+    "title": "Toda a linha",
+    "body": "Sete formatos, entre latas e garrafas, para cada ocasião.",
+    "alt": "{format} de Conti Zero Grau de {volume}",
+    "ctaTitle": "Encontre perto de você",
+    "cta": "Onde comprar"
   }
 }

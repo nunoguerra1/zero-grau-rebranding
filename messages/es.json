@@ -111,6 +111,7 @@
     "category": "Pilsen",
     "abv": "4,4% alc.",
     "returnable": "Retornable",
+    "viewAll": "Ver toda la línea",
     "formats": {
       "can": "Lata",
       "bottle": "Botella"
@@ -136,5 +137,12 @@
         "description": "La botella de 600 ml, ideal para compartir en la mesa. Retornable: devolvela y economizá."
       }
     }
+  },
+  "Line": {
+    "title": "Toda la línea",
+    "body": "Siete formatos, entre latas y botellas, para cada ocasión.",
+    "alt": "{format} de Conti Zero Grau de {volume}",
+    "ctaTitle": "Encontrala cerca tuyo",
+    "cta": "Dónde comprar"
   }
 }

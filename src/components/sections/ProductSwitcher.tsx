@@ -326,10 +326,15 @@ export function ProductSwitcher({ asPage = false }: { asPage?: boolean }) {
             </Swap>
           </div>
 
-          <div className="mt-8">
+          <div className="mt-8 flex flex-wrap items-center gap-4">
             <Button href="/donde-comprar" arrow>
               {t("cta")}
             </Button>
+            {!asPage && (
+              <Button href="/productos" variant="ghost">
+                {t("viewAll")}
+              </Button>
+            )}
           </div>
 
           <div className="mt-8 flex items-center gap-4">

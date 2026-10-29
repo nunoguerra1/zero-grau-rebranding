@@ -67,3 +67,66 @@ export const PRODUCTS: Product[] = [
 export function photoSrc(photo: Product["photo"]) {
   return photo === "ice" ? ICE.src : PHOTOS[photo].src;
 }
+
+export type LineProduct = {
+  id: string;
+  volume: number;
+  format: "can" | "bottle";
+  returnable?: boolean;
+  src: string;
+  /** Visual height relative to the tallest product (1L = 1). Tune if proportions look off. */
+  scale: number;
+};
+
+export const LINE: LineProduct[] = [
+  {
+    id: "p269",
+    volume: 269,
+    format: "can",
+    src: "/products/zero-grau-269ml.png",
+    scale: 0.5,
+  },
+  {
+    id: "p300",
+    volume: 300,
+    format: "bottle",
+    src: "/products/zero-grau-300ml.png",
+    scale: 0.68,
+  },
+  {
+    id: "p330",
+    volume: 330,
+    format: "bottle",
+    src: "/products/zero-grau-330ml.png",
+    scale: 0.74,
+  },
+  {
+    id: "p350",
+    volume: 350,
+    format: "can",
+    src: "/products/zero-grau-350ml.png",
+    scale: 0.5,
+  },
+  {
+    id: "p473",
+    volume: 473,
+    format: "can",
+    src: "/products/zero-grau-473ml.png",
+    scale: 0.62,
+  },
+  {
+    id: "p600",
+    volume: 600,
+    format: "bottle",
+    returnable: true,
+    src: "/products/zero-grau-600ml.png",
+    scale: 0.9,
+  },
+  {
+    id: "p1000",
+    volume: 1000,
+    format: "bottle",
+    src: "/products/zero-grau-1-litro.png",
+    scale: 1,
+  },
+];
