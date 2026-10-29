@@ -91,3 +91,19 @@
     scroll-behavior: auto !important;
   }
 }
+
+@keyframes mist-drift {
+  0%,
+  100% {
+    transform: translate3d(-6%, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(6%, -3%, 0) scale(1.08);
+  }
+}
+
+@utility animate-mist {
+  animation: mist-drift 22s ease-in-out infinite;
+  will-change: transform;
+}
