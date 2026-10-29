@@ -1,12 +1,15 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
-import { PagePlaceholder } from "@/components/layout/PagePlaceholder";
+import { setRequestLocale } from "next-intl/server";
+import { ProductSwitcher } from "@/components/sections/ProductSwitcher";
 
 type Props = { params: Promise<{ locale: string }> };
 
-export default async function Page({ params }: Props) {
+export default async function ProductsPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Pages.products");
 
-  return <PagePlaceholder title={t("title")} description={t("description")} />;
+  return (
+    <main>
+      <ProductSwitcher asPage />
+    </main>
+  );
 }
