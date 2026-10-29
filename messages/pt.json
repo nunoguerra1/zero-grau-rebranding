@@ -102,5 +102,39 @@
       "toastPalms": "Duas latas de Conti Zero Grau brindando contra o céu azul, com palmeiras ao fundo",
       "pour": "Garrafa de 1 litro de Conti Zero Grau e um copo sendo servido"
     }
+  },
+  "Products": {
+    "title": "Nossa linha",
+    "label": "Linha de produtos Zero Grau",
+    "alt": "{format} de Conti Zero Grau de {volume} ml",
+    "announce": "Zero Grau {volume} ml, produto {current} de {total}",
+    "category": "Pilsen",
+    "abv": "4,4% alc.",
+    "returnable": "Retornável",
+    "formats": {
+      "can": "Lata",
+      "bottle": "Garrafa"
+    },
+    "cta": "Onde comprar",
+    "prev": "Produto anterior",
+    "next": "Próximo produto",
+    "goTo": "Ir para o produto {n}",
+    "items": {
+      "p269": {
+        "description": "A mais compacta da linha: uma cerveja leve e bem gelada em porção pequena."
+      },
+      "p350": {
+        "description": "O formato clássico em lata: leve, refrescante e fácil de levar para qualquer lugar."
+      },
+      "p473": {
+        "description": "Mais lata para curtir sem pressa, com o mesmo sabor leve e refrescante."
+      },
+      "p300": {
+        "description": "Garrafa individual de 300 ml, pensada para ser tomada bem gelada."
+      },
+      "p600": {
+        "description": "A garrafa de 600 ml, ideal para dividir na mesa. Retornável: devolva e economize."
+      }
+    }
   }
 }
