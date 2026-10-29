@@ -89,5 +89,18 @@
         "body": "Uma cerveja mais cristalina que gela muito mais rápido."
       }
     }
+  },
+  "Moments": {
+    "title": "Para compartilhar com os amigos",
+    "body": "Cada ocasião pede uma Zero Grau bem gelada.",
+    "photos": {
+      "poolTable": "Garrafa de Conti Zero Grau de 1 litro sobre uma mesa de sinuca, com um homem segurando um copo ao fundo",
+      "shelf": "Prateleira refrigerada cheia de latas de Conti Zero Grau",
+      "toastTable": "Duas mãos brindando com latas de Conti Zero Grau de 473 ml sobre uma mesa azul com petiscos",
+      "iceCooler": "Mão pegando uma lata de Conti Zero Grau em uma caixa térmica com gelo",
+      "canFrosted": "Lata de Conti Zero Grau de 269 ml ao lado de um copo gelado sobre uma mesa de madeira",
+      "toastPalms": "Duas latas de Conti Zero Grau brindando contra o céu azul, com palmeiras ao fundo",
+      "pour": "Garrafa de 1 litro de Conti Zero Grau e um copo sendo servido"
+    }
   }
 }
