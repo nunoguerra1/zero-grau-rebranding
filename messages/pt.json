@@ -70,5 +70,24 @@
     "productAlt": "Garrafa de Conti Zero Grau de 600 ml",
     "videoTitle": "Comercial Zero Grau",
     "closeVideo": "Fechar vídeo"
+  },
+  "Triple": {
+    "title": "Triplo filtrado",
+    "caption": "Assim de rápido ela gela",
+    "canAlt": "Lata de Conti Zero Grau de 350 ml",
+    "steps": {
+      "one": {
+        "title": "Primeiro filtrado",
+        "body": "Uma base limpa, pensada para uma cerveja leve e fácil de beber."
+      },
+      "two": {
+        "title": "Segundo filtrado",
+        "body": "Mais pureza e um sabor refrescante, sem peso."
+      },
+      "three": {
+        "title": "Terceiro filtrado",
+        "body": "Uma cerveja mais cristalina que gela muito mais rápido."
+      }
+    }
   }
 }
