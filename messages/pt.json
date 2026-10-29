@@ -225,5 +225,25 @@
       "all": "Todas",
       "map": "Ver no mapa"
     }
+  },
+  "Contact": {
+    "title": "Contato",
+    "body": "Fale com a gente: estamos aqui para ajudar.",
+    "channels": {
+      "whatsapp": "WhatsApp",
+      "whatsappDetail": "Escreva agora",
+      "sac": "SAC",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "facebookDetail": "Siga a gente"
+    },
+    "form": {
+      "title": "Escreva para nós",
+      "name": "Seu nome",
+      "message": "Sua mensagem",
+      "submit": "Enviar pelo WhatsApp",
+      "hint": "O WhatsApp vai abrir com a sua mensagem pronta para enviar.",
+      "template": "Olá, sou {name}. {message} #contizerograu"
+    }
   }
 }
