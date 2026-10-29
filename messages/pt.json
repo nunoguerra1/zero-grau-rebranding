@@ -144,5 +144,28 @@
     "alt": "{format} de Conti Zero Grau de {volume}",
     "ctaTitle": "Encontre perto de você",
     "cta": "Onde comprar"
+  },
+  "Returnables": {
+    "titleLine1": "Retorne suas garrafas",
+    "titleLine2": "e economize",
+    "body": "O sistema é simples: você compra, guarda as garrafas vazias e troca por uma nova na próxima compra.",
+    "cycleLabel": "Ciclo de retorno de garrafas",
+    "bottleAlt": "Garrafa retornável de Conti Zero Grau de 600 ml",
+    "stepsTitle": "Descubra como economizar!",
+    "cta": "Onde comprar",
+    "steps": {
+      "one": {
+        "title": "Compre",
+        "body": "Sua Conti Zero Grau de 600 ml retornável, e a gente leva até a sua casa."
+      },
+      "two": {
+        "title": "Guarde",
+        "body": "Suas garrafas vazias de Conti Zero Grau de 600 ml para a sua próxima compra."
+      },
+      "three": {
+        "title": "Pronto!",
+        "body": "Na próxima compra, traga sua retornável vazia e leve uma nova Conti Zero Grau de 600 ml."
+      }
+    }
   }
 }

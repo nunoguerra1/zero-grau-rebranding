@@ -5,7 +5,7 @@ import { LuArrowRight } from "react-icons/lu";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
-type Variant = "primary" | "ghost";
+type Variant = "primary" | "ghost" | "dark";
 
 const base =
   "group relative inline-flex min-h-12 items-center justify-center overflow-hidden rounded-full px-7 py-3 text-sm font-bold tracking-[0.14em] uppercase transition-colors duration-300";
@@ -18,6 +18,11 @@ const variants: Record<Variant, { root: string; fill: string; content: string }>
   },
   ghost: {
     root: "border border-white/40 text-white",
+    fill: "bg-white",
+    content: "group-hover:text-navy-950",
+  },
+  dark: {
+    root: "bg-navy-900 text-white",
     fill: "bg-white",
     content: "group-hover:text-navy-950",
   },

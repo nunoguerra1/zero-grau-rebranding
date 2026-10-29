@@ -1,12 +1,17 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
-import { PagePlaceholder } from "@/components/layout/PagePlaceholder";
+import { setRequestLocale } from "next-intl/server";
+import { ReturnableSteps } from "@/components/sections/ReturnableSteps";
+import { ReturnablesHero } from "@/components/sections/ReturnablesHero";
 
 type Props = { params: Promise<{ locale: string }> };
 
-export default async function Page({ params }: Props) {
+export default async function ReturnablesPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Pages.returnables");
 
-  return <PagePlaceholder title={t("title")} description={t("description")} />;
+  return (
+    <main>
+      <ReturnablesHero />
+      <ReturnableSteps />
+    </main>
+  );
 }
