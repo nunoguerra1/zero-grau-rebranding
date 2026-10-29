@@ -44,6 +44,7 @@
     font-family: var(--font-sans);
     font-size: clamp(1.0625rem, 1.02rem + 0.2vw, 1.1875rem);
     line-height: 1.65;
+    overflow-x: clip;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
   }

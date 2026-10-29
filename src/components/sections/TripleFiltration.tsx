@@ -140,7 +140,7 @@ export function TripleFiltration() {
         </div>
 
         <div className="relative order-1 mx-auto h-[30svh] w-full max-w-sm lg:order-2 lg:h-[64svh]">
-          <div className="triple-aura absolute inset-0 m-auto size-[85%] rounded-full bg-[radial-gradient(circle,rgba(24,197,232,0.7),transparent_65%)]" />
+          <div className="triple-aura absolute inset-0 m-auto size-[110%] bg-[radial-gradient(closest-side,rgba(24,197,232,0.6),transparent)]" />
           <Image
             src="/products/zero-grau-350ml.png"
             alt={t("canAlt")}
@@ -148,7 +148,7 @@ export function TripleFiltration() {
             sizes="(min-width: 1024px) 30vw, 60vw"
             className="triple-can object-contain drop-shadow-[0_25px_50px_rgba(6,18,61,0.4)]"
           />
-          <div className="triple-frost pointer-events-none absolute inset-[6%] rounded-[45%] bg-[radial-gradient(circle_at_50%_30%,rgba(255,255,255,0.9),rgba(169,230,250,0.4)_45%,transparent_70%)] opacity-0 mix-blend-screen blur-md motion-reduce:opacity-40" />
+          <div className="triple-frost pointer-events-none absolute inset-[6%] bg-[radial-gradient(closest-side_at_50%_35%,rgba(255,255,255,0.85),rgba(169,230,250,0.35)_55%,transparent)] opacity-0 mix-blend-screen blur-md motion-reduce:opacity-40" />
         </div>
       </div>
     </section>
