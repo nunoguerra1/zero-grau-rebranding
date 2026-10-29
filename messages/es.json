@@ -27,7 +27,8 @@
     "navigation": "Navegación",
     "contact": "Contacto",
     "legal": "Beba con moderación. Venta prohibida a menores de 18 años.",
-    "credit": "Propuesta de rediseño · Unect Jr."
+    "credit": "Propuesta de rediseño · Unect Jr.",
+    "casaAlt": "Casa Di Conti, desde 1947"
   },
   "Pages": {
     "products": {
@@ -167,5 +168,33 @@
         "body": "En tu próxima compra traé tu retornable vacía y llevate una nueva Conti Zero Grau de 600 ml."
       }
     }
+  },
+  "Heritage": {
+    "title": "Calidad y tradición",
+    "since": "Desde 1947",
+    "crestAlt": "Escudo de Casa Di Conti, desde 1947",
+    "yearsLabel": "años de tradición",
+    "yearsBody": "Desde 1947, Casa Di Conti elabora bebidas con foco en la calidad. Zero Grau es parte de esa historia.",
+    "emblemTitle": "Un escudo, cuatro símbolos",
+    "emblem": {
+      "vine": {
+        "title": "La vid",
+        "body": "Un símbolo del escudo que remite al origen natural de las bebidas."
+      },
+      "grain": {
+        "title": "Cereales y lúpulo",
+        "body": "La cebada y el lúpulo, base de la cerveza, también presentes en el escudo."
+      },
+      "work": {
+        "title": "El trabajo",
+        "body": "Las personas detrás de cada producto que llega a tu mesa."
+      },
+      "industry": {
+        "title": "La industria",
+        "body": "La fábrica que sostiene la producción y la calidad de cada lote."
+      }
+    },
+    "ctaTitle": "Excelencia en bebidas",
+    "cta": "Conocé la línea"
   }
 }

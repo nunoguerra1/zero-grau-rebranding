@@ -1,12 +1,17 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
-import { PagePlaceholder } from "@/components/layout/PagePlaceholder";
+import { setRequestLocale } from "next-intl/server";
+import { HeritageHero } from "@/components/sections/HeritageHero";
+import { HeritageStory } from "@/components/sections/HeritageStory";
 
 type Props = { params: Promise<{ locale: string }> };
 
-export default async function Page({ params }: Props) {
+export default async function HeritagePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Pages.heritage");
 
-  return <PagePlaceholder title={t("title")} description={t("description")} />;
+  return (
+    <main>
+      <HeritageHero />
+      <HeritageStory />
+    </main>
+  );
 }

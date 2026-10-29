@@ -1,9 +1,11 @@
 import { useTranslations } from "next-intl";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { Logo } from "@/components/brand/Logo";
+import { BRAND } from "@/config/media";
 import { NAV_ITEMS } from "@/config/navigation";
 import { SITE, whatsappUrl } from "@/config/site";
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -21,6 +23,19 @@ export function Footer() {
         <div className="space-y-5">
           <Logo className="w-32" />
           <p className="max-w-sm text-ice-100">{t("tagline")}</p>
+          <Link
+            href="/casa-di-conti"
+            className="mt-6 inline-block opacity-80 transition-opacity hover:opacity-100"
+          >
+            <Image
+              src={BRAND.casaWhite.src}
+              width={BRAND.casaWhite.width}
+              height={BRAND.casaWhite.height}
+              alt={t("casaAlt")}
+              sizes="128px"
+              className="h-auto w-32"
+            />
+          </Link>
         </div>
 
         <nav aria-label={t("navigation")}>
