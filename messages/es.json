@@ -1,13 +1,58 @@
 {
-    "Metadata": {
-        "title": "Zero Grau | Cerveza Pilsen Conti",
-        "description": "Zero Grau es una cerveza pilsen ligera, refrescante y sabrosa, con triple filtrado, que se enfría mucho más rápido."
+  "Metadata": {
+    "title": "Zero Grau | Cerveza Pilsen Conti",
+    "description": "Zero Grau es una cerveza pilsen ligera, refrescante y sabrosa, con triple filtrado, que se enfría mucho más rápido."
+  },
+  "Home": {
+    "title": "Zero Grau",
+    "subtitle": "Te invita a refrescarte"
+  },
+  "Preloader": {
+    "loading": "Cargando"
+  },
+  "Nav": {
+    "home": "Inicio",
+    "products": "Productos",
+    "returnables": "Retornables",
+    "heritage": "Casa Di Conti",
+    "whereToBuy": "Dónde comprar",
+    "contact": "Contacto",
+    "label": "Navegación principal",
+    "menu": "Abrir menú",
+    "close": "Cerrar menú",
+    "homeAria": "Zero Grau, ir al inicio",
+    "skip": "Ir al contenido"
+  },
+  "LocaleSwitcher": {
+    "label": "Idioma"
+  },
+  "Footer": {
+    "tagline": "Zero Grau te invita a refrescarte.",
+    "navigation": "Navegación",
+    "contact": "Contacto",
+    "legal": "Beba con moderación. Venta prohibida a menores de 18 años.",
+    "credit": "Propuesta de rediseño · Unect Jr."
+  },
+  "Pages": {
+    "products": {
+      "title": "Productos",
+      "description": "Conocé toda la línea Zero Grau."
     },
-    "Home": {
-        "title": "Zero Grau",
-        "subtitle": "Te invita a refrescarte"
+    "returnables": {
+      "title": "Retornables",
+      "description": "Retorná tus botellas y economizá."
     },
-    "Preloader": {
-        "loading": "Cargando"
+    "heritage": {
+      "title": "Casa Di Conti",
+      "description": "Calidad y tradición desde 1947."
+    },
+    "whereToBuy": {
+      "title": "Dónde comprar",
+      "description": "Encontrá Zero Grau cerca tuyo."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Hablá con nosotros."
     }
+  }
 }
