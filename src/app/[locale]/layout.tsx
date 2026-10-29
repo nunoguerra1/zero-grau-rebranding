@@ -10,6 +10,7 @@ import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvide
 import { Preloader } from "@/components/effects/Preloader";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { AgeGate } from "@/components/effects/AgeGate";
 
 const display = Anton({
   weight: "400",
@@ -60,6 +61,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider>
           <SmoothScrollProvider>
             <Preloader />
+            <AgeGate />
             <Header />
             <div id="content">{children}</div>
             <Footer />

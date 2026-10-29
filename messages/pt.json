@@ -54,5 +54,15 @@
       "title": "Contato",
       "description": "Fale com a gente."
     }
+  },
+  "AgeGate": {
+    "title": "Você tem mais de 18 anos?",
+    "description": "Para entrar no site da Zero Grau, você precisa ter idade legal para consumir bebidas alcoólicas.",
+    "confirm": "Sim, tenho mais de 18",
+    "deny": "Não, sou menor",
+    "deniedTitle": "Sentimos muito",
+    "deniedDescription": "Este site é exclusivo para maiores de 18 anos.",
+    "back": "Voltar",
+    "responsible": "Beba com moderação."
   }
 }

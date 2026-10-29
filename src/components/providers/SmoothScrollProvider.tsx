@@ -14,7 +14,7 @@ import "lenis/dist/lenis.css";
 import { usePathname } from "next/navigation";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 
-type SmoothScrollContextValue = { setLocked: (locked: boolean) => void };
+type SmoothScrollContextValue = { setLocked: (locked: boolean, id?: string) => void };
 
 const SmoothScrollContext = createContext<SmoothScrollContextValue>({
   setLocked: () => {},
@@ -24,15 +24,18 @@ export const useSmoothScroll = () => useContext(SmoothScrollContext);
 
 export function SmoothScrollProvider({ children }: { children: ReactNode }) {
   const lenisRef = useRef<Lenis | null>(null);
-  const lockedRef = useRef(false);
+  const locksRef = useRef(new Set<string>());
   const pathname = usePathname();
   const previousPathname = useRef(pathname);
 
-  const setLocked = useCallback((locked: boolean) => {
-    lockedRef.current = locked;
-    if (locked) lenisRef.current?.stop();
+  const setLocked = useCallback((locked: boolean, id: string = "default") => {
+    if (locked) locksRef.current.add(id);
+    else locksRef.current.delete(id);
+
+    const isLocked = locksRef.current.size > 0;
+    if (isLocked) lenisRef.current?.stop();
     else lenisRef.current?.start();
-    document.documentElement.style.overflow = locked ? "hidden" : "";
+    document.documentElement.style.overflow = isLocked ? "hidden" : "";
   }, []);
 
   useEffect(() => {
@@ -41,7 +44,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
 
     const lenis = new Lenis({ duration: 1.15, smoothWheel: true });
     lenisRef.current = lenis;
-    if (lockedRef.current) lenis.stop();
+    if (locksRef.current.size > 0) lenis.stop();
 
     lenis.on("scroll", ScrollTrigger.update);
     const tick = (time: number) => lenis.raf(time * 1000);

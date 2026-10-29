@@ -27,8 +27,8 @@ export function Header() {
 
   useEffect(() => {
     if (!open) return;
-    setLocked(true);
-    return () => setLocked(false);
+    setLocked(true, "menu");
+    return () => setLocked(false, "menu");
   }, [open, setLocked]);
 
   return (

@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { Logo } from "@/components/brand/Logo";
 import { useSmoothScroll } from "@/components/providers/SmoothScrollProvider";
 import { EASE_IN_OUT, EASE_OUT_EXPO } from "@/lib/motion";
+import { markReady } from "@/lib/site-ready";
 
 const SESSION_KEY = "zero-grau:preloaded";
 const MIN_DURATION = 1900;
@@ -39,7 +40,7 @@ export function Preloader() {
     let raf = 0;
     const start = performance.now();
 
-    setLocked(true);
+    setLocked(true, "preloader");
     whenReady().then(() => {
       ready = true;
     });
@@ -52,8 +53,9 @@ export function Preloader() {
       if (p >= 1 && (ready || skip)) {
         sessionStorage.setItem(SESSION_KEY, "1");
         setProgress(100);
+        markReady("preloader");
         setVisible(false);
-        setLocked(false);
+        setLocked(false, "preloader");
         return;
       }
 
@@ -65,7 +67,7 @@ export function Preloader() {
     return () => {
       cancelled = true;
       cancelAnimationFrame(raf);
-      setLocked(false);
+      setLocked(false, "preloader");
     };
   }, [setLocked]);
 
