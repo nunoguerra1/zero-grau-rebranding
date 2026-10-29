@@ -4,3 +4,5 @@ export const HERO_VIDEO: HeroVideo = {
   src: "/video/zero-grau-comercial.mp4",
   poster: "/video/poster.jpg", // Opcional: se não tiver poster, você pode apagar esta linha
 };
+
+export const ICE = { src: "/textures/ice.jpg", width: 1717, height: 2576 } as const;

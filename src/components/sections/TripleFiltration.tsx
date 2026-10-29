@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import { gsap, useGSAP } from "@/lib/gsap";
+import { IceBackdrop } from "../effects/IceBackdrop";
 
 const STEPS = ["one", "two", "three"] as const;
 const START_TEMP = 24;
@@ -67,7 +68,8 @@ export function TripleFiltration() {
             { yPercent: -4, rotate: 4, duration: 1 },
             0,
           )
-          .fromTo(".triple-progress", { scaleX: 0 }, { scaleX: 1, duration: 1 }, 0);
+          .fromTo(".triple-progress", { scaleX: 0 }, { scaleX: 1, duration: 1 }, 0)
+          .fromTo(".triple-ice", { opacity: 0 }, { opacity: 1, duration: 0.8 }, 0.2);
 
         steps.forEach((step, i) => {
           if (i === 0) gsap.set(step, { autoAlpha: 1 });
@@ -96,7 +98,11 @@ export function TripleFiltration() {
       aria-labelledby="triple-title"
       className="relative flex h-svh items-center overflow-hidden bg-ice-50 text-navy-900 motion-reduce:h-auto motion-reduce:bg-navy-900 motion-reduce:py-24 motion-reduce:text-white"
     >
-      <div className="over mx-auto grid w-full max-w-7xl items-center gap-2 px-5 pt-20 sm:px-8 lg:grid-cols-2 lg:gap-12 lg:pt-16">
+      <IceBackdrop
+        className="triple-ice inset-0 opacity-0 motion-reduce:opacity-100"
+        overlayClassName="bg-navy-950/55"
+      />
+      <div className="over relative z-10 mx-auto grid w-full max-w-7xl items-center gap-2 px-5 pt-20 sm:px-8 lg:grid-cols-2 lg:gap-12 lg:pt-16">
         <div className="order-2 lg:order-1">
           <h2 id="triple-title" className="font-display text-title uppercase">
             {t("title")}

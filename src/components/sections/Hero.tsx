@@ -12,6 +12,7 @@ import { HERO_VIDEO } from "@/config/media";
 import { gsap, useGSAP } from "@/lib/gsap";
 import { EASE_OUT_EXPO } from "@/lib/motion";
 import { useSiteReady } from "@/lib/site-ready";
+import { IceBackdrop } from "../effects/IceBackdrop";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -43,6 +44,11 @@ export function Hero() {
           ease: "none",
           scrollTrigger,
         });
+        gsap.to(".hero-ice", {
+          yPercent: 8,
+          ease: "none",
+          scrollTrigger,
+        });
       });
       return () => mm.revert();
     },
@@ -50,10 +56,15 @@ export function Hero() {
   );
 
   return (
-    <section ref={sectionRef} className="relative min-h-svh overflow-hidden bg-ice-dark">
+    <section ref={sectionRef} className="relative min-h-svh overflow-hidden bg-navy-950">
+      <IceBackdrop
+        priority
+        className="hero-ice inset-x-0 -top-[12%] h-[124%]"
+        imageClassName="opacity-90"
+        overlayClassName="bg-[linear-gradient(90deg,rgba(6,18,61,.88),rgba(6,18,61,.2)_75%),linear-gradient(180deg,rgba(6,18,61,.35),rgba(6,18,61,.9))]"
+      />
       <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -bottom-1/4 -left-1/4 h-3/4 w-[150%] animate-mist bg-[radial-gradient(ellipse_at_center,rgba(169,230,250,0.35),transparent_65%)] blur-3xl" />
-        <div className="absolute -top-1/4 -right-1/4 h-2/3 w-[120%] animate-mist bg-[radial-gradient(ellipse_at_center,rgba(30,154,224,0.4),transparent_65%)] blur-3xl [animation-delay:-9s]" />
+        <div className="absolute -bottom-1/4 -left-1/4 h-3/4 w-[150%] animate-mist bg-[radial-gradient(ellipse_at_center,rgba(169,230,250,0.22),transparent_65%)] blur-3xl" />
       </div>
 
       <div className="relative mx-auto grid min-h-svh max-w-7xl items-center gap-6 px-5 pt-28 pb-12 sm:px-8 lg:grid-cols-2 lg:gap-10">
