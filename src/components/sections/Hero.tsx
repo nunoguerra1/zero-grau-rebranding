@@ -80,7 +80,9 @@ export function Hero() {
             animate={ready ? { opacity: 1, y: 0 } : undefined}
             transition={{ delay: 1.5, duration: 0.8, ease: EASE_OUT_EXPO }}
           >
-            <Button href="/productos">{t("ctaProducts")}</Button>
+            <Button href="/productos" arrow>
+              {t("ctaProducts")}
+            </Button>
             {HERO_VIDEO && (
               <Button variant="ghost" onClick={() => setVideoOpen(true)}>
                 <LuPlay aria-hidden size={18} />
