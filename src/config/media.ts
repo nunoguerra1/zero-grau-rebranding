@@ -18,3 +18,10 @@ export const PHOTOS = {
 } as const;
 
 export type PhotoKey = keyof typeof PHOTOS;
+
+export const BRAND = {
+  zeroGrauWhite: { src: "/brand/zero-grau-white.png", width: 2008, height: 1307 },
+  zeroGrauBlue: { src: "/brand/zero-grau-blue.png", width: 2008, height: 1307 },
+  casaWhite: { src: "/brand/casa-di-conti-white.png", width: 2008, height: 1327 },
+  casaBlue: { src: "/brand/casa-di-conti.png", width: 2008, height: 1327 },
+} as const;

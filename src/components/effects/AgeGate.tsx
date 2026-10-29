@@ -66,7 +66,7 @@ export function AgeGate() {
           }}
         >
           <div className="w-full max-w-lg text-center">
-            <Logo className="text-6xl sm:text-7xl" />
+            <Logo className="mx-auto w-36 sm:w-44" priority />
 
             {status === "required" ? (
               <>

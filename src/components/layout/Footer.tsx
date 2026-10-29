@@ -19,7 +19,7 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-navy-950">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 md:grid-cols-[1.4fr_1fr_1fr]">
         <div className="space-y-5">
-          <Logo className="text-5xl" />
+          <Logo className="w-32" />
           <p className="max-w-sm text-ice-100">{t("tagline")}</p>
         </div>
 

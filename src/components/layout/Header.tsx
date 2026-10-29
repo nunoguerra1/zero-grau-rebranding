@@ -48,7 +48,7 @@ export function Header() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 sm:px-8">
           <Link href="/" aria-label={t("homeAria")} onClick={() => setOpen(false)}>
-            <Logo className="text-3xl sm:text-4xl" />
+            <Logo className="w-[4.5rem] sm:w-20" priority />
           </Link>
 
           <nav aria-label={t("label")} className="hidden items-center gap-8 xl:flex">

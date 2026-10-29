@@ -102,7 +102,7 @@ export function Preloader() {
               transition: { duration: 0.45, ease: EASE_OUT_EXPO },
             }}
           >
-            <Logo className="text-6xl sm:text-8xl" />
+            <Logo className="w-40 sm:w-56" priority />
             <div className="w-48 sm:w-72">
               <div className="h-px w-full bg-white/20">
                 <div
