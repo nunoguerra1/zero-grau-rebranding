@@ -10,6 +10,19 @@ export const SITE = {
 const WHATSAPP_MESSAGE =
   "Olá, seja bem-vindo(a)!\nSou a assistente virtual da Casa Di Conti! Envie sua mensagem. #contizerograu";
 
-export function whatsappUrl(text: string = WHATSAPP_MESSAGE) {
-  return `https://api.whatsapp.com/send?phone=${SITE.whatsapp.phone}&text=${encodeURIComponent(text)}`;
+const TAG = "#contizerograu";
+
+export function whatsappUrl(text?: string) {
+  const message = text ? `${text} ${TAG}` : WHATSAPP_MESSAGE;
+  return `https://api.whatsapp.com/send?phone=${SITE.whatsapp.phone}&text=${encodeURIComponent(message)}`;
 }
+
+export type Store = {
+  name: string;
+  city: string;
+  region: string;
+  address?: string;
+  mapsUrl?: string;
+};
+
+export const STORES: Store[] = [];

@@ -196,5 +196,34 @@
     },
     "ctaTitle": "Excelência em bebidas",
     "cta": "Conheça a linha"
+  },
+  "Where": {
+    "title": "Onde comprar",
+    "body": "Peça sua Zero Grau pelo WhatsApp ou fale com nossa equipe. E procure sempre bem gelada.",
+    "photoAlt": "Geladeira com latas de Conti Zero Grau",
+    "whatsapp": {
+      "title": "Peça pelo WhatsApp",
+      "body": "Escreva para nós e a assistente virtual da Casa Di Conti atende você.",
+      "cta": "Abrir WhatsApp"
+    },
+    "sac": {
+      "title": "Serviço de atendimento",
+      "body": "Ligue para o nosso SAC para dúvidas e pedidos."
+    },
+    "look": {
+      "title": "Procure estes formatos",
+      "body": "Latas, garrafas e a garrafa retornável de 600 ml.",
+      "items": {
+        "can": "Lata 350 ml",
+        "bottle": "Garrafa 300 ml",
+        "returnable": "Retornável 600 ml"
+      }
+    },
+    "stores": {
+      "title": "Pontos de venda",
+      "region": "Região",
+      "all": "Todas",
+      "map": "Ver no mapa"
+    }
   }
 }
